@@ -45,8 +45,8 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(1.6rem,calc((100vw
 .world-copy p{color:var(--muted);font-size:.95rem;max-width:27rem}
 .world-hint{font-size:.75rem!important;letter-spacing:.03em;margin-top:1.4rem}
 .globe-stage{position:relative;min-height:28rem;display:grid;place-items:center;isolation:isolate}
-.globe-stage::before{content:"";position:absolute;width:min(78%,26rem);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 32%,rgba(255,255,255,.8),rgba(181,174,154,.12) 47%,rgba(87,78,60,.07) 72%,transparent 73%);filter:blur(8px);z-index:-1}
-#globe{width:min(100%,35rem);height:auto;aspect-ratio:1;touch-action:none;cursor:grab;outline:none}
+.globe-stage::before{content:"";position:absolute;left:50%;bottom:7%;width:min(68%,23rem);height:13%;transform:translateX(-50%);border-radius:50%;background:radial-gradient(ellipse,rgba(119,96,64,.14) 0%,rgba(119,96,64,.07) 44%,transparent 76%);filter:blur(10px);z-index:-1;pointer-events:none}
+#globe{width:min(100%,35rem);height:auto;aspect-ratio:1;touch-action:none;cursor:grab;outline:none;transition:opacity .24s ease}
 #globe:active{cursor:grabbing}
 .globe-label{position:absolute;left:1rem;bottom:1.5rem;min-width:9rem;padding:.65rem .85rem;background:color-mix(in srgb,var(--bg) 88%,transparent);border:1px solid var(--line);backdrop-filter:blur(8px);pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity .2s,transform .2s}
 .globe-label.visible{opacity:1;transform:none}
